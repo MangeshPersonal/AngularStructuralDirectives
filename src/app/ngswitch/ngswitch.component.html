@@ -1,0 +1,15 @@
+
+
+ <select (change)='checkChangedValue($event.target.value)' >
+   <option value="none" selected>Select</option>
+    <option value="SG">Saurav</option>
+    <option value="ST">Sachin</option>
+    <option value="RD">Rahul</option>
+  </select> 
+
+<div [ngSwitch]="playerselection">
+    <p *ngSwitchCase="'SG'" >Saurav selected</p>
+    <p *ngSwitchCase="'ST'">sachin selected</p>
+    <p *ngSwitchCase="'RD'">Rahul selected</p>
+    <p *ngSwitchDefault>NO player selcted</p>
+</div>

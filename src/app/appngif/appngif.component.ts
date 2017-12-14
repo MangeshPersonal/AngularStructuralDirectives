@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appngif.component.css']
 })
 export class AppngifComponent implements OnInit {
+  showdiv=false;
+ sampletext="This is the sample text";
+  togglevisibilty():void
+  {
+    this.showdiv=!this.showdiv;
+  }
 
   constructor() { }
 
