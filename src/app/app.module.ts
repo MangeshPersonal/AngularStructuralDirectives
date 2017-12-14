@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AppngifComponent } from './appngif/appngif.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppngifComponent
   ],
   imports: [
     BrowserModule
